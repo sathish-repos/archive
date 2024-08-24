@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@anx-shared-ng-portfolio": [
+        "libs/shared/angular/portfolio/src/index.ts"
+      ],
       "@anx/portfolio-shared-smart": [
         "libs/portfolio/shared/smart/src/index.ts"
       ],
