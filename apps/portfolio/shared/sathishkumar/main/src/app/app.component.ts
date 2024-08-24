@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NavComponent } from '@anx-shared-ng-portfolio';
+import { HeaderFooterMocks, NavComponent } from '@anx-shared-ng-portfolio';
 
 @Component({
   standalone: true,
@@ -11,4 +11,5 @@ import { NavComponent } from '@anx-shared-ng-portfolio';
 })
 export class AppComponent {
   title = 'sathishkumar.dev';
+  content = signal(HeaderFooterMocks);
 }
