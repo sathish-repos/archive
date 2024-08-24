@@ -1,1 +1,2 @@
-export * from './lib/portfolio-shared-ui/portfolio-shared-ui.component';
+export * from './lib/pages/about-page/about-page.component';
+export * from './lib/pages/home-page/home-page.component';
