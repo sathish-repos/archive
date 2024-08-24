@@ -1,0 +1,11 @@
+<nav class="navbar sticky-top bg-body-tertiary">
+  <div class="container-fluid p-2">
+    <div class="container d-flex justify-content-between">
+      @for (nav of content(); track $index) {
+      <span class="navbar-brand mb-0 h1" routerLink="{{ nav.link }}">{{
+        nav.label
+      }}</span>
+      }
+    </div>
+  </div>
+</nav>
