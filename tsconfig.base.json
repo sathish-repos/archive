@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@anx/portfolio-shared-smart": [
+        "libs/portfolio/shared/smart/src/index.ts"
+      ],
       "@anx/portfolio-shared-ui": ["libs/portfolio/shared/ui/src/index.ts"]
     }
   },
