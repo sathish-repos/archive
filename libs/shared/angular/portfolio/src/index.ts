@@ -1,1 +1,1 @@
-export * from './lib/shared-angular-portfolio/shared-angular-portfolio.component';
+export * from './lib/components/index';
