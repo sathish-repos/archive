@@ -1,1 +1,2 @@
-export * from './lib/portfolio-shared-smart/portfolio-shared-smart.component';
+export * from './lib/entry-components/about/about.component';
+export * from './lib/entry-components/home/home.component';
