@@ -1,0 +1,9 @@
+@if (content()) {
+<h4>{{ content().header.title }}</h4>
+<p>{{ content().header.description }}</p>
+@for (school of content().schools; track $index) {
+<p>{{ school.education }}</p>
+<p>{{ school.name }}</p>
+<p>{{ school.year }}</p>
+<p>{{ school.score }}</p>
+} }
