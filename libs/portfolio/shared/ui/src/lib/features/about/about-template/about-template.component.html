@@ -1,0 +1,11 @@
+@if (content()) {
+<div class="container about-template">
+  <anx-description [content]="content().description"></anx-description>
+  <anx-experience [content]="content().experience"></anx-experience>
+  <anx-education [content]="content().education"></anx-education>
+  <anx-tech-stack [content]="content().techStack"></anx-tech-stack>
+  <anx-contact-details
+    [content]="content().contactDetails"
+  ></anx-contact-details>
+</div>
+}
