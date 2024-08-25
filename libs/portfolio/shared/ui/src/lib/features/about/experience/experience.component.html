@@ -1,0 +1,11 @@
+@if (content()) {
+<h4>{{ content().header.title }}</h4>
+<p>{{ content().header.description }}</p>
+@for (experience of content().experiences; track $index) {
+<h6>{{ experience.position }}</h6>
+<p>{{ experience.at }}</p>
+<p>{{ experience.year }}</p>
+<h6>{{ content().highlights.label }}</h6>
+@for (highlight of experience.highlights; track $index) {
+<p>{{ highlight }}</p>
+} } }
