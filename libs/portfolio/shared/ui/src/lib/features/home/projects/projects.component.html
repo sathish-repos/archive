@@ -1,0 +1,9 @@
+@if (content()) {
+<anx-header [content]="content().header"></anx-header>
+@for (project of content().projects; track $index) {
+<picture class="card">
+  <source srcSet="todo.png" media="(min-width: 600px)" />
+  <img src="app-2.webp" />
+</picture>
+<anx-header [content]="project.header"></anx-header>
+} }
