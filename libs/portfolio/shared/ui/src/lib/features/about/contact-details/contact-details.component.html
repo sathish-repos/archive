@@ -1,0 +1,9 @@
+@if (content()) {
+<h4>{{ content().header.title }}</h4>
+<p>
+  {{ content().header.description }}
+</p>
+<p>{{ content().emailId.value }}</p>
+<p>{{ content().phoneNumber.label }} {{ content().phoneNumber.value }}</p>
+
+}
