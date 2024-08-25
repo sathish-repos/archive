@@ -1,11 +1,12 @@
 import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Description } from '../about-template/models/about-template.types';
+import { HeaderComponent } from '@anx-shared-ng-portfolio';
 
 @Component({
   selector: 'anx-description',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,HeaderComponent],
   templateUrl: './description.component.html',
   styleUrl: './description.component.scss',
 })

@@ -1,6 +1,5 @@
 @if (content()) {
-<h4>{{ content().header.title }}</h4>
-<p>{{ content().header.description }}</p>
+<anx-header [content]="content().header"></anx-header>
 @for (experience of content().experiences; track $index) {
 <h6>{{ experience.position }}</h6>
 <p>{{ experience.at }}</p>

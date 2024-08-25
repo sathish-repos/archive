@@ -1,11 +1,12 @@
 import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContactDetails } from '../about-template/models/about-template.types';
+import { HeaderComponent } from '@anx-shared-ng-portfolio';
 
 @Component({
   selector: 'anx-contact-details',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HeaderComponent],
   templateUrl: './contact-details.component.html',
   styleUrl: './contact-details.component.scss',
 })

@@ -1,11 +1,12 @@
 import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Education } from '../about-template/models/about-template.types';
+import { HeaderComponent } from '@anx-shared-ng-portfolio';
 
 @Component({
   selector: 'anx-education',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HeaderComponent],
   templateUrl: './education.component.html',
   styleUrl: './education.component.scss',
 })

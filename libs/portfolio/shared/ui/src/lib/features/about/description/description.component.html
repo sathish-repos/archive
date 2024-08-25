@@ -1,6 +1,6 @@
 @if (content()) {
-<h2>{{ content().header.title }}</h2>
-<p>{{ content().header.description }}</p>
+<anx-header [content]="content().header" titleClasses="h2"></anx-header>
+
 @for (description of content().descriptions; track $index) {
 <p>{{ description }}</p>
 } }

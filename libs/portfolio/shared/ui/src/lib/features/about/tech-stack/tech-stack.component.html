@@ -1,6 +1,5 @@
 @if (content()) {
-<h4>{{ content().header.title }}</h4>
-<p>{{ content().header.title }}</p>
+<anx-header [content]="content().header"></anx-header>
 
 @for (stack of content().stacks; track $index) {
 <p>{{ stack }}</p>

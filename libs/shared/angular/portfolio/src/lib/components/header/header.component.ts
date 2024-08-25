@@ -11,6 +11,6 @@ import { Header } from './model/header.types';
 })
 export class HeaderComponent {
   content = input.required<Header>();
-  titleClasses = input<string>('h2');
+  titleClasses = input<string>('h4');
   descriptionClasses = input<string>('');
 }

@@ -1,6 +1,6 @@
 @if (content()) {
-<h4>{{ content().header.title }}</h4>
-<p>{{ content().header.description }}</p>
+  <anx-header [content]="content().header"></anx-header>
+
 @for (school of content().schools; track $index) {
 <p>{{ school.education }}</p>
 <p>{{ school.name }}</p>

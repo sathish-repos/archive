@@ -1,4 +1,4 @@
 @if (content()) {
-<div class="{{titleClasses()}}" >{{ content().title }}</div>
-<div class="{{descriptionClasses()}}" >{{ content().description }}</div>
+<div class="{{ titleClasses() }}">{{ content().title }}</div>
+<div class="mb-2 {{ descriptionClasses() }}">{{ content().description }}</div>
 }

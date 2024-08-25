@@ -1,11 +1,12 @@
 import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Experience } from '../about-template/models/about-template.types';
+import { HeaderComponent } from '@anx-shared-ng-portfolio';
 
 @Component({
   selector: 'anx-experience',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HeaderComponent],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss',
 })
