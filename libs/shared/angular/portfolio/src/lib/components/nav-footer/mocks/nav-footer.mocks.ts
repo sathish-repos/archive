@@ -1,4 +1,4 @@
-import { HeaderFooter, Nav } from '../models/header-footer.types';
+import { HeaderFooter, Nav } from '../models/nav-footer.types';
 
 export const NavMocks: Nav[] = [
   {

@@ -1,3 +1,9 @@
-export * from './header-footer/mocks/header-footer.mocks';
-export * from './header-footer/models/header-footer.types';
-export * from './header-footer/components/nav/nav.component';
+// header
+export * from './header/header.component';
+export * from './header/mocks/header.mocks';
+export * from './header/model/header.types';
+
+// nav footer
+export * from './nav-footer/components/nav/nav.component';
+export * from './nav-footer/mocks/nav-footer.mocks';
+export * from './nav-footer/models/nav-footer.types';
