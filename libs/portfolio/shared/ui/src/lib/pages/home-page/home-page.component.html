@@ -1,1 +1,3 @@
-<anx-home-template></anx-home-template>
+@if (content()) {
+<anx-home-template [content]="content()"></anx-home-template>
+}
