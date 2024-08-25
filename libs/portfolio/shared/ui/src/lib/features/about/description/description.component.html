@@ -1,0 +1,6 @@
+@if (content()) {
+<h2>{{ content().header.title }}</h2>
+<p>{{ content().header.description }}</p>
+@for (description of content().descriptions; track $index) {
+<p>{{ description }}</p>
+} }
