@@ -12,17 +12,17 @@ export class ApiService {
   user = signal<string>('initial');
   baseUrl = `https://sathish-repos.github.io/assets/projects/shared-portfolio`;
   homePageEndpoint = `/aem/pages/home-page.json`;
-  aboutPageEndpoint = `/aem/pages/home-page.json`;
+  aboutPageEndpoint = `/aem/pages/about-page.json`;
 
   getHomePageStaticData(): Observable<Home> {
     return this.http.get<Home>(
-      `${this.baseUrl}/${this.user + this.homePageEndpoint}`
+      `${this.baseUrl}/${this.user() + this.homePageEndpoint}`
     );
   }
 
   getAboutPageStaticData(): Observable<About> {
     return this.http.get<About>(
-      `${this.baseUrl}/${this.user + this.aboutPageEndpoint}`
+      `${this.baseUrl}/${this.user() + this.aboutPageEndpoint}`
     );
   }
 }
