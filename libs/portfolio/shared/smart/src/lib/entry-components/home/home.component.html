@@ -1,1 +1,4 @@
-<anx-home-page></anx-home-page>
+@if (loaded$ | async) { @if (content$ | async; as content) {
+<anx-home-page [content]="content"></anx-home-page>
+
+} }

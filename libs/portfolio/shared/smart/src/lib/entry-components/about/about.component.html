@@ -1,1 +1,3 @@
-<anx-about-page></anx-about-page>
+@if (loaded$ | async) { @if (content$ | async; as content) {
+<anx-about-page [content]="content"></anx-about-page>
+} }

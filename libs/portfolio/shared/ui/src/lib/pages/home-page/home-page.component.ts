@@ -2,7 +2,6 @@ import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeTemplateComponent } from '../../features/home/home-template/home-template.component';
 import { HomeTemplate } from '../../features/home/home-template/models/home-template.types';
-import { HomeTemplateMocks } from '../../features/home/home-template/mocks/home-template.mocks';
 
 @Component({
   selector: 'anx-home-page',
@@ -12,5 +11,5 @@ import { HomeTemplateMocks } from '../../features/home/home-template/mocks/home-
   styleUrl: './home-page.component.scss',
 })
 export class HomePageComponent {
-  content = input<HomeTemplate>(HomeTemplateMocks);
+  content = input.required<HomeTemplate>();
 }
