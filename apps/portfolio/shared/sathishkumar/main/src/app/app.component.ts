@@ -1,8 +1,8 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
   FooterComponent,
-  HeaderFooterMocks,
+  HeaderFooter,
   HostNames,
   NavComponent,
 } from '@anx-shared-ng-portfolio';
@@ -18,6 +18,10 @@ import { ApiService } from '@anx/portfolio-shared-smart';
 export class AppComponent {
   constructor(private apiService: ApiService) {
     this.apiService.user.set(HostNames.SATHISHKUMAR);
+    this.content.set(
+      this.apiService.getHeaderFooterStaticData(HostNames.SATHISHKUMAR)
+    );
   }
-  content = signal(HeaderFooterMocks);
+
+  content = signal<HeaderFooter>({} as HeaderFooter);
 }

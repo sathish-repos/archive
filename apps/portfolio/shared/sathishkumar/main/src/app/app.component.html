@@ -1,5 +1,7 @@
+@if (content()) {
 <anx-nav [content]="content().header"></anx-nav>
 <div class="container">
   <router-outlet />
 </div>
 <anx-footer [content]="content().footer"></anx-footer>
+}

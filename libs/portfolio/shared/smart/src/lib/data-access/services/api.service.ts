@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { About } from '../model/about.types';
 import { Home } from '../model/home.types';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { HeaderFooter } from '@anx-shared-ng-portfolio';
 
 @Injectable({
@@ -28,9 +28,12 @@ export class ApiService {
     );
   }
 
-  getHeaderFooterStaticData(): Observable<HeaderFooter> {
-    return this.http.get<HeaderFooter>(
-      `${this.baseUrl}/${this.user() + this.headerFooterEndpoint}`
-    );
+  getHeaderFooterStaticData(user: string): HeaderFooter {
+    let headerFooter = {} as HeaderFooter;
+    this.http
+      .get<HeaderFooter>(`${this.baseUrl}/${user + this.headerFooterEndpoint}`)
+      .subscribe((data) => (headerFooter = data));
+
+    return headerFooter;
   }
 }
