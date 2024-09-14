@@ -12,7 +12,7 @@ export const NavMocks: Nav[] = [
 ];
 
 export const FooterMocks: Footer = {
-  copyrights: `Copyright @ 2024`,
+  copyrights: `© Sathishkumar 2024`,
   version: 'ver: 1.0.0',
 };
 

@@ -9,7 +9,7 @@ export const appRoutes: Route[] = [
   },
   {
     path: '',
-    title: 'Subhashini.dev',
+    title: 'Subhashini',
     loadComponent: () => HomeComponent,
     pathMatch: 'full',
   },
